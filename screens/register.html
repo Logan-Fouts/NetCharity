@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/register.css">
+        <title>My Phone App</title>
+    </head>
+    <body>
+        <div id="register" class="screen">
+            <h1>Register</h1>
+            <form id="register-form">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" name="register-username" required>
+
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="register-password" required>
+
+                <label for="register-confirm-password">Confirm Password:</label>
+                <input type="password" id="register-confirm-password" name="register-confirm-password" required>
+
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="register-email" required>
+
+                <label for="register-organization">
+                    I represent an Organization
+                    <input type="checkbox" id="register-organization" name="register-organization">
+                </label>
+
+                <div id="organization-info" style="display:none;">
+                    <label for="organization-name">Organization Name:</label>
+                    <input type="text" id="organization-name" name="organization-name">
+
+                    <label for="organization-url">Organization Website:</label>
+                    <input type="text" id="organization-url" name="organization-url">
+
+                    <label for="organization-registration-code">Organization Registration Code:</label>
+                    <input type="text" id="organization-registration-code" name="organization-registration-code">
+                </div>
+
+                <button type="submit">Register</button>
+                <a href="#" id="back-to-login-link">Back</a>
+            </form>
+        </div>
+    </body>
+</html>
