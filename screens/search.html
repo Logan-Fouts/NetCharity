@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Search Page</title>
+        <link rel="stylesheet" href="../css/search.css">
+    </head>
+    <body onload="loadSearch()">
+        <div id="wrap">
+            <div id="buttons">
+                <a href="../screens/home.html">
+                    <button id="donate-button">
+                        <img id="donateimg" src="../screens/img/heart.png" alt="Donate">
+                    </button>
+                </a>
+                <button id="search-button">
+                    <img id="searchimg" src="../screens/img/search.png" alt="Search">
+                </button>
+            </div>
+            <h1 id="title">Charity Search</h1>
+            <form id='form' action="#" method="get">
+                <input id="search" type="text" name="query" placeholder="Find A Charity...">
+                <button id="submit" type="submit">Search</button>
+            </form>
+            <div class="container">
+                <div id="search-results"></div>
+            </div>
+            <script type="text/javascript" src="../js/search.js"></script>
+        </div>
+    </body>
+</html>
