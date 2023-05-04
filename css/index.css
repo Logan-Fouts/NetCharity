@@ -1,69 +1,86 @@
 /* mobile styles */
-@media (max-width: 768px) {
-   body {
-      background: linear-gradient(to bottom right, #2ecc71, #3498db, #9b59b6);
-      padding: 0;
-      margin: 0;
-   }
-   
-   #login {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-   }
-   
-   #logo {
-      width: 80%;
-      max-width: 200px;
-   }
-   
-   #title {
-      font-size: 2rem;
-      margin: 1rem 0;
-   }
-   
-   #login-form {
-      margin: 1rem 0;
-   }
-   
-   #login-form input {
-      width: 80%;
-      max-width: 300px;
-      margin: 0.5rem auto;
-      display: block;
-   }
-   
-   #login-form button {
-      width: 80%;
-      max-width: 300px;
-      margin: 1rem auto;
-      display: block;
-      padding: 0.75rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      background-color: #9b59b6;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-   }
-   
-   #login-form button:hover {
-      background-color: #8e44ad;
-   }
-   
-   #login-form a {
-      display: block;
-      margin: 0.5rem 0;
-      font-size: 1rem;
-      color: #fff;
-   }
-   
-   #login-form a:hover {
-      text-decoration: underline;
-   }
+
+/* Set the height and width of the body to cover the entire viewport */
+body {
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+/* Style the login screen */
+#login {
+   /* Add a gradient background to the login screen */
+   background: linear-gradient(to bottom right, #2ecc71, #3498db, #9b59b6);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+/* Style the title of the login screen */
+#title {
+   font-size: 2.5rem;
+   margin: 1rem 0;
+   color: #fff;
+   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Style the login form */
+#login-form {
+   margin: 1rem 0;
+}
+
+/* Style the placeholder text for the username and password fields */
+#username::placeholder, #password::placeholder {
+   opacity: 0.5;
+}
+
+/* Style the input fields for the username and password */
+#login-form input {
+   width: 80%;
+   max-width: 25rem;
+   margin: 0.5rem auto;
+   display: block;
+   border-radius: 0.4rem;
+   padding: 0.8rem;
+   height: 0.8rem;
+}
+
+/* Style the login button */
+#login-form button {
+   width: 80%;
+   max-width: 20rem;
+   margin: 1rem auto;
+   display: block;
+   padding: 1rem;
+   font-size: 1.5rem;
+   font-weight: bold;
+   background-color: #8e44ad;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/* Style the login button when it is hovered over */
+#login-form button:hover {
+   background-color: #9b59b6;
+}
+
+/* Style the links in the login form */
+#login-form a {
+   display: block;
+   margin: 0.5rem 0;
+   font-size: 1rem;
+   color: #fff;
+   text-decoration: none;
+}
+
+/* Style the links in the login form when they are hovered over */
+#login-form .link:hover {
+   text-decoration: underline;
 }
