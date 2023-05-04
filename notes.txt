@@ -1,0 +1,15 @@
+- changed title on login.
+
+
+
+
+
+index.css
+- The linear-gradient is it the three colors that where given in the design document?
+- removed @media (max-width: 768px)
+- merged body and login (we dont have a body)
+- #login removed padding we need it to be 100%
+- #login removed width 80%, max-width: 200px
+- Maid the username and password feels a bit larger and maid the placeholder opacity lower.
+- Tried to change the logo to a div and use css but I gave up.
+- asked gpt to add comments to the css file, that would be good for multiple developers to know.

@@ -1,23 +1,27 @@
+<!-- The index class represents the initial screen of the NetCharity app, 
+     which displays the login form. -->
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/index.css">
-      <title>My Phone App - Login</title>
+      <title>NetCharity- Login</title>
    </head>
    <body>
       <div id="login" class="screen">
          <img id="logo" src="screens/img/logor.png" alt="logo">
-         <h1 id="title">Net Charity</h1>
+         <h1 id="title">NetCharity</h1>
          <form id="login-form">
             <input class="bottom-line" type="text" id="username" name="username" placeholder="Username" required>
             <input class="bottom-line" type="password" id="password" name="password" placeholder="Password" required>
             <a href="screens/home.html">
                <button type="button">Login</button>
             </a>
-            <a href="#" id="register-link">Register</a>
-            <a href="#" id="forgot-password-link">Can't log in?</a>
+            <!--These are just visuals and will not be implemented-->
+            <a href="#" id="register-link" class="link">Register</a>
+            <a href="#" id="forgot-password-link" class="link">Can't log in?</a>
          </form>
       </div>
    </body>
