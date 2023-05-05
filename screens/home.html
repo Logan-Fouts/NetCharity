@@ -10,7 +10,8 @@
         <div id="home">
             <div id="header">
                 <img id="logo" src="../screens/img/logow.png", alt="logo">
-                <h1 id="title">Net Charity</h1>
+                <h1 id="title">NetCharity</h1>
+                <!-- Link to the account screen -->
                 <a href="../screens/account.html">
                     <button id="account">
                         <img id="account-button" href="#" src="../screens/img/userlogo.png", alt="account">
@@ -19,17 +20,28 @@
             </div>
             <h1 id="welcome">Welcome, John</h1>
             <div id="content">
+
                 <div id="buttons">
-                    <a>
+                    <!-- Link to the donation screen -->
+                    <a href="">
                         <button id="donate-button"><img id="donateimg" src="../screens/img/heart.png" alt="Donate"></button>
                     </a>
+                    <!-- Link to the event screen, add a control to only show when a organization logs in  -->
+                    <a href="">
+                        <button id="event-button">
+                          <img id="eventimg" src="" alt="Event image for button">
+                        </button>
+                    </a>  
+                    <!-- Link to the search screen -->
                     <a href="../screens/search.html">
                         <button id="search-button">
                           <img id="searchimg" src="../screens/img/search.png" alt="Search">
                         </button>
                     </a>                      
                 </div>
+
                 <div id="events">
+                    <!-- The upcoming events -->
                     <h2>Upcoming Events</h2>
                     <div id="eventlist">
                         <div id="event">
@@ -48,18 +60,13 @@
                             <li>Date</li>
                         </div>
                     </div>
+
+                <!-- Notifications should be injected here -->
                 <div id="notifications">
                     <h2>Notifications</h2>
                     <div id="feed">
                         <h3> 
                             <!-- Here we can use list items for the notifications -->
-                            This program include trival things (login and register), 
-                            to showcase a template we can directly be added to by each
-                            team member. Simply write a X.html and X.css file
-                            place them in their respected folder and add business logic
-                            to the controller. The controller.js might need to be
-                            divided it due to being large and hevily going
-                            agains the "Single Responsibility Principle".
                         </h3>
                     </div>
                 </div>
