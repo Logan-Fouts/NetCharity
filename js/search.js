@@ -1,5 +1,7 @@
 // The Following Functions Handle Search Functionality.
 
+// Note: The end goal would be for each charity to have its own little page to show there key info.
+
 async function loadSearch(){
   console.log("Loading Orginizations...")
   const orgs = await loadOrganizations()
@@ -41,11 +43,11 @@ async function loadSearch(){
         searchResultsContainer.appendChild(li);
       }
 
-      console.log(filteredWords);
     }
   });
 }
 
+// Called to read and parse all organaizations from the json file.
 async function loadOrganizations() {
   const response = await fetch('../data/charities.json');
   const orgsData = await response.text();
