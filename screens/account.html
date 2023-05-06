@@ -3,10 +3,81 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/base.css"> -->
     <link rel="stylesheet" href="../css/account.css">
     <title>Account page</title>
   </head>
   <body>
-    TODO: Account Page
+  <div id="accountPage" class="bodyContent">
+    <div id="header">
+      <img id="logo" src="../screens/img/logow.png" alt="logo">
+      <h1 id="title">Account</h1>
+      <a href="../screens/account.html">
+        <button id="account">
+          <img id="account-button" href="#" src="../screens/img/userlogo.png" alt="account">
+        </button>
+      </a>
+    </div>
+    <div id="content">
+      <div class="settingsBlock">
+        <div class="row grid grid2">
+          <div class="ttl">Name: </div>
+          <div class="field"><input type="text" name="name" placeholder="Type your name" value="admin"/> </div>
+        </div>
+        <div class="row grid grid2">
+          <div class="ttl">Email: </div>
+          <div class="field"><input type="email" name="email" placeholder="Type your email" value=""/> </div>
+        </div>
+        <div class="row grid grid2">
+          <div class="ttl">Phone: </div>
+          <div class="field"><input type="text" name="phone" placeholder="Phone number" value=""/> </div>
+        </div>
+        <div class="subBlock">
+          <div class="row grid grid2">
+            <div class="ttl">Password: </div>
+            <div class="field"><input type="password" name="pwd1" placeholder="Type your password" value=""/> </div>
+          </div>
+          <div class="row grid grid2">
+            <div class="ttl">Repeat password: </div>
+            <div class="field"><input type="password" name="pwd2" placeholder="Type your password" value=""/> </div>
+          </div>
+        </div>
+
+        <div class="row submit">
+          <button type="button">Save</button>
+        </div>
+
+        <div class="row submit">
+          <button class="back" type="button">Back</button>
+        </div>
+
+      </div>
+
+      <div id="DonationBlock">
+        <h2>Donation history</h2>
+        <div class="table">
+          <div class="row grid grid221">
+            <div class="date">27-01-2023</div>
+            <div class="sum">$ 143,00</div>
+            <div class="state">Ok</div>
+          </div>
+          <div class="row grid grid221">
+            <div class="date">25-02-2023</div>
+            <div class="sum">$ 210,99</div>
+            <div class="state">Ok</div>
+          </div>
+          <div class="row grid grid221">
+            <div class="date">12-03-2023</div>
+            <div class="sum">$ 300,05</div>
+            <div class="state">Ok</div>
+          </div>
+          <div class="row grid grid221">
+            <div class="date">17-04-2023</div>
+            <div class="sum">$ 200,01</div>
+            <div class="state">Ok</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
