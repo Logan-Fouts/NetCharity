@@ -48,12 +48,6 @@ body {
 #account-button {
     padding: 10px 20px;
     max-width: 30px;
-    transition: background-color 0.2s ease;
-}
-
-#account-button:hover {
-    background-color: #000;
-    color: #fff;
 }
 
 #content {
@@ -81,7 +75,7 @@ body {
 }
 
 
-#donate-button, #search-button {
+#donate-button, #search-button, #event-button {
     font-size: 20px;
     text-decoration: none;
     color: #fff;
@@ -93,11 +87,7 @@ body {
 }
 
 
-#donateimg{
-    width: 40px;
-}
-
-#searchimg{
+#donateimg, #searchimg, #eventimg{
     width: 40px;
 }
 
