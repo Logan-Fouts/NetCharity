@@ -119,6 +119,12 @@ body {
     border-radius: 25px;
     overflow-y: scroll;
     background-color: #ffffff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#feed::-webkit-scrollbar {
+    display: none;
 }
 
 .notification {
