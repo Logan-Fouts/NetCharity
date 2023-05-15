@@ -3,8 +3,8 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("../screens/img/background.jpg");
     background-size: cover;
+    background: linear-gradient(to bottom right, #2ecc71, #3498db, #9b59b6);
  }
  
 #wrap {
