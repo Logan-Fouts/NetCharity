@@ -103,7 +103,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('../screens/img/background.jpg');
+    background: linear-gradient(to bottom right, #2ecc71, #3498db, #9b59b6);
     background-size: cover;
     background-position: center top -25px;
 }
@@ -149,8 +149,6 @@ body {
     background-color: #3776ff59;
     position: absolute;
     bottom: 0;
-    /* border: 0px solid #000; */
-    border-radius: 20px;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0px 1px 20px rgba(170, 0, 255, 0.2);
