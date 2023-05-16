@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donations</title>
-</head>
-<body>
-    TODO: Donation Page
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/base.css"> -->
+    <link rel="stylesheet" href="../css/donation.css">
+    <title>Donation page</title>
+  </head>
+  <body onload="loadOrgs()">
+  <div id="accountPage" class="bodyContent">
+    <div id="header">
+      <img id="logo" src="../screens/img/logow.png" alt="logo">
+      <h1 id="title">Donation Page</h1>
+      <a href="../screens/account.html">
+        <button id="account">
+          <img id="account-button" href="#" src="../screens/img/userlogo.png" alt="account">
+        </button>
+      </a>
+    </div>
+    <div id="content">
+      <div class="eventBlock">
+        <div class="row grid grid2">
+          <div class="ttl">Organization: </div>
+          <div>
+            <form action="#">
+              <select name="organizations" id="selectOrg" onchange="showEvent()">
+
+              </select>
+        </form>
+          </div>
+          
+        </div>
+        <div id="Event" style="display: none;">
+          <div class="row grid grid2">
+            <div class="ttl">Event: </div>
+            <form action="#">
+              <select name="events" id="selectEvent" onchange="showPayment()">
+                <option value="choose">Choose an Event</option>
+                <option value="event1">Event 1</option>
+                <option value="event2">Event 2</option>
+              </select>
+        </form>
+          </div>
+        </div>
+
+        <div class="subBlock" id="Payment" style="display: none;">
+          <div class="row grid grid2">
+            <div class="ttl"><h4>Payment data</h4></div>
+          </div>
+          <div class="row grid grid2">
+            <div class="ttl">Card Number</div>
+            <div class="ttl">Security Code</div>
+          </div>
+          <div class="row grid grid2">
+            <div class="field"><input type="text" name="cn" placeholder="XXXX-XXXX-XXXX-XXXX" value=""/> </div>
+            <div class="field2"><input type="text" name="ccv" placeholder="CCV" value=""/> </div>
+            
+          </div>
+          <div class="row grid grid2">
+            <div class="ttl">Expiry date </div>
+          </div>
+          <div class="row grid grid2">
+            <div class="field2"><input type="text" name="ed" placeholder="MM/YY" value=""/> </div>
+          </div>
+          <div class="row grid grid2">
+            <div class="ttl">Donation Amount </div>
+          </div>
+          <div class="row grid grid2">
+            <div class="field2"><input type="text" name="amount" placeholder="$" value=""/> </div>
+          </div>
+          <div class="row submit">
+            <button class="donate" type="button">Donate!</button>
+          </div>
+        </div>
+
+        <div class="row submit">
+          <a href="home.html">
+            <button class="back" type="button">Back</button>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript" src="../js/donation.js"></script>
 </html>
