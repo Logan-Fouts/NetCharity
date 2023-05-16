@@ -34,6 +34,9 @@ body {
 
 #buttons {
     display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 4rem;
 }
 
 #logo {
@@ -81,7 +84,7 @@ body {
     color: #fff;
     background-color: transparent;
     border: none;
-    padding: 0px 75px;
+    padding: 0px 45px;
     border-radius: 5px;
     transition: background-color 0.2s ease;
 }
@@ -92,44 +95,62 @@ body {
 }
 
 #notifications{
-    text-align: left;
-    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    min-width: 80%;
     height: 100%;
 }
 
-#events {
-    text-align: left;
-    width: 80%;
-    height: 80%;
-}
-
 #notifications h2 {
+    margin-top: 3rem;
+    color: #fff;
     font-size: 24px;
+    text-shadow: 5px 3px 4px #383838;
 }
 
 #feed {
+    height: 67%;
+    margin-top: 2rem;
     border: 2px solid #000;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 25px;
-    max-height: 40%;
-    overflow-y: auto;
+    overflow-y: scroll;
     background-color: #ffffff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-#eventlist {
-    border-radius: 25px;
-    max-height: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
+#feed::-webkit-scrollbar {
+    display: none;
 }
 
-#event {
-    background-color: #b2a4cd;
-    border-radius: 10px;
-    border: 1px solid #000;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+.notification {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.notification:hover {
+    background-color: #f2f2f2 !important;
+}
+
+.notification-even {
+    background-color: #fafafa;
+}
+
+.notification-odd {
+    background-color: #eaeaea;
+}
+
+.notification-title, .notification-company, .notification-date {
+    font-weight: bold;
+}
+
+.notification-description {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
