@@ -3,9 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/event.css">
   <title>Events</title>
 </head>
 <body>
-    TODO: Event Page
+  <div id="eventPage" class="bodyContent">
+    <div id="header">
+      <img id="logo" src="../screens/img/logow.png" alt="logo">
+      <h1 id="title">Event Management</h1>
+      <a href="../screens/account.html">
+        <button id="account">
+          <img id="account-button" href="#" src="../screens/img/userlogo.png" alt="account">
+        </button>
+      </a>
+    </div>
+    <div id="content">
+      <div class="creationBlock">
+        <form id="creationForm">
+          <label id="eventNameLabel" class="row">Event name: </label><br>
+          <input id="nameInput" class="row" type="text" placeholder="Type the event name"><br>
+          <label id="eventDescriptionLabel" class="row">Event description: </label><br>
+          <textarea id="descriptionInput" class="row" placeholder="Type the event description"></textarea><br>
+          <div id="dates" class="row">
+            <label>Start date: </label>
+            <input id="startDateInput" type="date">
+            <label>End date: </label>
+            <input id="endDateInput" type="date">
+          </div>
+        </form>
+        <button id="createButton" class="button" type="button" onclick="create()">CREATE EVENT</button><br>
+        <a href="home.html">
+          <button id="backButton" class="button" type="button">BACK</button>
+        </a>
+      </div>
+      <div class="managementBlock">
+        <h2>My events</h2>
+        <div id="eventList">
+          <table id="eventTable">
+            <tr>
+              <th>Start date</th>
+              <th>End date</th>
+              <th>Name</th>
+              <th>Delete</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+<script type="text/javascript" src="../js/event.js"></script>
 </html>
