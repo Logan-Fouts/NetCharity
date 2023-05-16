@@ -1,1 +1,221 @@
-/* Should be used to style donate.html */
+
+
+div{
+    border: none 1px solid;
+}
+.eventBlock{ 
+    margin-top: 20px;
+}
+.eventBlock .subBlock{
+    background: #ac7cc8a2;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-top: #d9d9d9 1px solid;
+    border-bottom: #d9d9d9 1px solid;
+}
+
+.eventBlock .row{
+    margin: 5px 25px;
+}
+.eventBlock .row.submit{
+    padding: 5px 30px;
+}
+.eventBlock .row.submit .back{
+    background: #00000098;
+}
+.eventBlock .row.submit .back:hover{
+    background: #4d4d4d;
+}
+.eventBlock .row.submit .donate{
+    background: #0019fd9f;
+}
+.eventBlock .row.submit .donate:hover{
+    background: #4c00ff;
+}
+.eventBlock .row.submit button{
+    border-radius: 13px;
+    border: none;
+    padding: 15px;
+    background: #222036;
+    color: #ffffff;
+    width: 100%;
+    text-transform: uppercase;
+}
+.eventBlock .row .ttl{
+    display: inline-grid;
+    align-items: center;
+    text-align: left;
+}
+
+.eventBlock .field input{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 12px;
+}
+.eventBlock .field2 input{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 12px;
+    width: 2.8rem;
+    margin-right: 2.5rem;
+    align-self:baseline;
+}
+.eventBlock .field2 {
+    padding-left:0.5rem;
+    width: 2.5rem;
+    align-self:baseline;
+}
+.ttl {
+    margin-left: 4%;
+}
+
+
+.grid{
+    display: grid;
+}
+.grid2{
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid3{
+    grid-template-columns:  1fr 1fr 1fr;
+}
+.grid221{
+    grid-template-columns:  2fr 2fr 1fr;
+}
+.grid113{
+    grid-template-columns:  1fr 1fr 3fr;
+}
+
+/* ------------------- From base.css Below ------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bodyContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom right, #2ecc71, #3498db, #9b59b6);
+    background-size: cover;
+    background-position: center top -25px;
+}
+
+#title {
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo {
+    height:70px;
+    width: auto;
+}
+
+#account {
+    all: initial;
+}
+#account-button {
+    padding: 10px 20px;
+    max-width: 30px;
+    transition: background-color 0.2s ease;
+}
+
+#account-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#content {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 75%;
+    background-color: #3776ff59;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 1px 20px rgba(170, 0, 255, 0.2);
+}
+
+#welcome {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 5px 3px 4px #383838;
+    position: relative;
+    top: -20px;
+    font-weight: 50;
+    text-align: center;
+}
+
+
+#events {
+    text-align: left;
+    width: 80%;
+    height: 80%;
+}
+
+
+
+#eventlist {
+    border-radius: 25px;
+    max-height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+#event {
+    background-color: #b2a4cd;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+ #selectOrg {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 13rem;
+        font-family: cursive, sans-serif;
+        background-color: #f8f8f8;
+        outline-color: invert;
+        lighting-color: #000;
+        color: #000000;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 4px;
+        border-radius: 9px;
+        outline: none;
+      }
+
+#selectEvent {
+margin-bottom: 10px;
+margin-top: 10px;
+width: 13rem;
+font-family: cursive, sans-serif;
+background-color: #f8f8f8;
+outline-color: invert;
+lighting-color: #000;
+color: #000000;
+border: 1px solid rgb(0, 0, 0);
+padding: 4px;
+border-radius: 9px;
+outline: none;
+}
