@@ -35,7 +35,7 @@
           <div class="row grid grid2">
             <div class="ttl">Event: </div>
             <form action="#">
-              <select name="events" id="selectEvent" onchange="showPayment()">
+              <select name="events" id="selectEvent" onchange="showType()">
                 <option value="choose">Choose an Event</option>
                 <option value="event1">Event 1</option>
                 <option value="event2">Event 2</option>
@@ -43,6 +43,20 @@
         </form>
           </div>
         </div>
+        <div id="type" style="display: none;">
+          <div class="row grid grid2">
+            <div class="ttl">Donation Type: </div>
+            <form action="#">
+              <select name="types" id="selectType" onchange="showPayment()">
+                <option value="choose">Choose a type</option>
+                <option value="money">Money</option>
+                <option value="clothes">Clothes</option>
+                <option value="time">Time</option>
+              </select>
+        </form>
+          </div>
+        </div>
+
 
         <div class="subBlock" id="Payment" style="display: none;">
           <div class="row grid grid2">
@@ -68,6 +82,94 @@
           </div>
           <div class="row grid grid2">
             <div class="field2"><input type="text" name="amount" placeholder="$" value=""/> </div>
+          </div>
+          <div class="row submit">
+            <div class="popup" onclick="popUp()">
+              <button class="donate" type="button">Donate!</button>
+              <a href="donate.html">
+                <span class="popuptext" id="myPopup">Thanks for your donation! </span>
+              </a>
+              
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="subBlock" id="Time" style="display: none;">
+          <div class="row grid grid2">
+            <div class="ttl">Select Days:</div>
+          </div>
+          <div class="row grid grid2">
+            <div id="checkbox">
+              <div>
+                <input type="checkbox" id="monday" name="monday">
+                <label for="monday">Monday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="tuesday" name="tuesday">
+                <label for="tuesday">Tuesday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="wednesday" name="wednesday">
+                <label for="wednesday">Wednesday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="thursday" name="thursday">
+                <label for="thursday">Thursday</label>
+              </div>
+            </div>
+            <div id="checkbox">
+              <div>
+                <input type="checkbox" id="friday" name="friday">
+                <label for="friday">Friday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="saturday	" name="saturday	">
+                <label for="saturday	">Saturday	</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sunday" name="sunday">
+                <label for="sunday">Sunday</label>
+              </div>
+            </div>
+          </div>
+          <div class="row grid grid2">
+            <div class="ttl">
+              <label for="start">Start date:</label>
+              <input id="date" type="date" id="start" name="time-start"">
+            </div>
+            <div class="ttl">
+              <label for="end">End date:</label>
+              <input id="date" type="date" id="end" name="time-end">
+            </div>
+          </div>
+          <div class="row grid grid2">
+            <div class="ttl">Start time:</div>
+            <div class="ttl">End time:</div>
+          </div>
+          <div class="row grid grid2">
+            <div class="field2"><input type="text" name="cn" placeholder="HH:MM" value=""/> </div>
+            <div class="field2"><input type="text" name="ccv" placeholder="HH:MM" value=""/> </div>
+            
+          </div>
+          <div class="row submit">
+            <div class="popup" onclick="popUp()">
+              <button class="donate" type="button">Donate!</button>
+              <a href="donate.html">
+                <span class="popuptext" id="myPopup">Thanks for your donation! </span>
+              </a>
+              
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="subBlock" id="Clothes" style="display: none;">
+          <div class="row grid">
+            <div class="ttl"><h4>You can send clothes to this address:</h4></div>
+          </div>
+          <div class="row grid">
+            <div class="ttl">Fake Street 123</div>
           </div>
           <div class="row submit">
             <div class="popup" onclick="popUp()">

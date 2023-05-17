@@ -71,6 +71,11 @@ div{
     margin-left: 4%;
 }
 
+input {
+    margin: 0.4rem;
+}
+
+
 
 .grid{
     display: grid;
@@ -94,6 +99,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-attachment: fixed;
 }
 
 .bodyContent {
@@ -106,6 +112,7 @@ body {
     background: linear-gradient(to bottom right, #2ecc71, #3498db, #9b59b6);
     background-size: cover;
     background-position: center top -25px;
+    background-attachment: fixed;
 }
 
 #title {
@@ -171,6 +178,11 @@ body {
     height: 80%;
 }
 
+#checkbox {
+    padding-left:2rem;
+    text-align: left;
+}
+
 
 
 #eventlist {
@@ -205,7 +217,7 @@ body {
         outline: none;
       }
 
-#selectEvent {
+#selectEvent, #selectType {
 margin-bottom: 10px;
 margin-top: 10px;
 width: 13rem;
@@ -272,3 +284,11 @@ outline: none;
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+  #date {
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    font: 1rem 'Fira Sans', sans-serif;
+}
