@@ -42,14 +42,43 @@ function showEvent() {
     }
   }
 
-  function showPayment() {
+  function showType() {
     var select = document.getElementById("selectEvent");
-    var element = document.getElementById("Payment");
+    var element = document.getElementById("type");
   
     if (select.value != "choose") {
       element.style.display = "block";
     } else {
       element.style.display = "none";
+    }
+  }
+
+  function showPayment() {
+    var select = document.getElementById("selectType");
+    var elementPayment = document.getElementById("Payment");
+    var elementTime = document.getElementById("Time");
+    var elementClothes = document.getElementById("Clothes");
+  
+    if (select.value == "choose") {
+      elementPayment.style.display = "none";
+      elementTime.style.display = "none";
+      elementClothes.style.display = "none";
+      
+    }
+    if (select.value == "money") {
+      elementPayment.style.display = "block";
+      elementTime.style.display = "none";
+      elementClothes.style.display = "none";
+    }
+    if (select.value == "time") {
+      elementPayment.style.display = "none";
+      elementTime.style.display = "block";
+      elementClothes.style.display = "none";
+    }
+    if (select.value == "clothes") {
+      elementPayment.style.display = "none";
+      elementTime.style.display = "none";
+      elementClothes.style.display = "block";
     }
   }
    
