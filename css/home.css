@@ -134,6 +134,11 @@ body {
     overflow: hidden;
 }
 
+#feed a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .notification:hover {
     background-color: #f2f2f2 !important;
 }
