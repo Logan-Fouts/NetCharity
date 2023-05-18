@@ -18,7 +18,7 @@
                     </button>
                 </a>           
             </div>
-            <h1 id="welcome">Welcome, Donald</h1>
+            <h1 id="welcome">Welcome, <span id="username"></span></h1>
             <div id="content">
                 <div id="buttons">
                     <!-- Link to the donation screen -->
@@ -39,7 +39,29 @@
                     </a>                      
                 </div>
 
-                <!-- Notifications should be injected here -->
+                <!-- This part handles the name-->
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                       const username = sessionStorage.getItem("username");
+                       const usernameElement = document.getElementById("username");
+                       const eventButton = document.getElementById("event-button");
+                       usernameElement.innerText = "Cat Allies"
+
+                       if (!username || username.trim() === "") {
+                            usernameElement.innerText = "Donald";
+                        } else if (username.toLowerCase() === "organization") {
+                            usernameElement.innerText = "Cat Allies";
+                        } else {
+                            usernameElement.innerText = username;
+                        }
+
+                        if (username.toLowerCase() !== "organization") {
+                            eventButton.style.display = "none";
+                        }
+                    });
+                 </script>
+
+                <!-- Notifications will just be hardcoded due to reasons... -->
                 <div id="notifications">
                     <h2>Notifications</h2>
                     <div id="feed">
