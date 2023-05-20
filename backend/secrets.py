@@ -1,0 +1,5 @@
+MYSQL_HOST='192.168.0.181'
+MYSQL_USER='root'
+MYSQL_PASSWORD=''
+MYSQL_DATABASE='charity_network_db'
+API_KEY=''
