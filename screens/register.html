@@ -3,44 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="../css/register.css">
         <title>My Phone App</title>
     </head>
     <body>
+        <div id="buttons">
+            <a href="../index.html">
+                <button id="back-button">
+                    <img id="backimg" src="../screens/img/back.png" alt="Donate">
+                </button>
+            </a>
+        </div>
         <div id="register" class="screen">
             <h1>Register</h1>
             <form id="register-form">
                 <label for="register-username">Username:</label>
-                <input type="text" id="register-username" name="register-username" required>
+                <input type="text" id="register-username" name="register-username" autocomplete="off" required>
 
                 <label for="register-password">Password:</label>
-                <input type="password" id="register-password" name="register-password" required>
+                <input type="password" id="register-password" name="register-password" autocomplete="off" required>
 
                 <label for="register-confirm-password">Confirm Password:</label>
-                <input type="password" id="register-confirm-password" name="register-confirm-password" required>
+                <input type="password" id="register-confirm-password" name="register-confirm-password" autocomplete="off" required>
 
                 <label for="register-email">Email:</label>
-                <input type="email" id="register-email" name="register-email" required>
-
-                <label for="register-organization">
-                    I represent an Organization
+                <input type="email" id="register-email" name="register-email" autocomplete="off" required>
+                
+                <label id="check" for="register-organization">
+                    I represent an Organization:
                     <input type="checkbox" id="register-organization" name="register-organization">
                 </label>
 
                 <div id="organization-info" style="display:none;">
                     <label for="organization-name">Organization Name:</label>
-                    <input type="text" id="organization-name" name="organization-name">
+                    <input type="text" id="organization-name" name="organization-name" autocomplete="off">
 
                     <label for="organization-url">Organization Website:</label>
-                    <input type="text" id="organization-url" name="organization-url">
+                    <input type="text" id="organization-url" name="organization-url" autocomplete="off">
 
                     <label for="organization-registration-code">Organization Registration Code:</label>
-                    <input type="text" id="organization-registration-code" name="organization-registration-code">
+                    <input type="text" id="organization-registration-code" name="organization-registration-code" autocomplete="off">
                 </div>
 
-                <button type="submit">Register</button>
-                <a href="#" id="back-to-login-link">Back</a>
+                <button id="register-button" type="submit">Register</button>
             </form>
         </div>
+        <script type="text/javascript" src="../js/register.js"></script>
     </body>
 </html>
