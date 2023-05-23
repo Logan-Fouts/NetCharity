@@ -1,0 +1,5 @@
+The amound of time each team member has put into the protoctype.
+
+
+Member               Time        Task
+Johan Lundmark       <20h       Framework, Registration Screen, Login Screen, Home Screen, and overall editing. 
