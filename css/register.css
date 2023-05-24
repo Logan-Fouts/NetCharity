@@ -79,8 +79,8 @@ h1 {
 }
 
 #register-form input.cb {
-    vertical-align: bottom;
-  position: relative;
+    vertical-align:middle;
+    margin-left:8px;
 }
 
 
